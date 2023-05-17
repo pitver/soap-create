@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://com.example/organization"
+           targetNamespace="http://com.example/organization" elementFormDefault="qualified">
+
+  <xs:element name="GetOrganizationByInnRequest">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="inn" type="xs:string"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="GetOrganizationByInnResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="name" type="xs:string"/>
+        <xs:element name="type" type="xs:string"/>
+        <xs:element name="numberOfEmployees" type="xs:int"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
